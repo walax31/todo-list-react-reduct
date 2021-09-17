@@ -36,7 +36,7 @@ function InputList() {
         type: 'ADD_TODO',
         payload: {
           lable: newList,
-          id: newList.length + 1
+          id: Math.ceil(Math.random() * 100)
         },
       },
         setNewList('')
